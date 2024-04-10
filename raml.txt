@@ -1,1852 +1,1893 @@
-#%RAML 1.0 DataType
-
-properties:
-  ConsuntivazioneOdlRequest:
-    type: object
-    required: false
-    properties:
-      assets:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            assetMeters:
-              type: array
-              required: false
-              items:
-                type: object
-                properties:
-                  accessibility:
-                    type: string
-                    example: test
-                    required: false
-                  activityType:
-                    type: number
-                    example: 1
-                    required: false
-                  caliberCode:
-                    type: string
-                    example: test
-                    required: false
-                  caliberDescription:
-                    type: string
-                    example: test
-                    required: false
-                  costantK1:
-                    type: number
-                    example: 1
-                    required: false
-                  costantK2:
-                    type: number
-                    example: 1
-                    required: false
-                  costantK3:
-                    type: number
-                    example: 1
-                    required: false
-                  description:
-                    type: string
-                    example: test
-                    required: false
-                  detachmentCode:
-                    type: string
-                    example: test
-                    required: false
-                  externalId:
-                    type: string
-                    example: test
-                    required: false
-                  externalSysId:
-                    type: string
-                    example: test
-                    required: false
-                  features:
-                    type: string
-                    example: test
-                    required: false
-                  id:
-                    type: string
-                    example: test
-                    required: false
-                  linearAssetMeterId:
-                    type: string
-                    example: test
-                    required: false
-                  measurements:
-                    type: array
-                    required: false
-                    items:
-                      type: object
-                      properties:
-                        accessoryMeasureCode:
-                          type: number
-                          example: 1
-                          required: false
-                        description:
-                          type: string
-                          example: test
-                          required: false
-                        externalId:
-                          type: string
-                          example: test
-                          required: false
-                        externalSysId:
-                          type: string
-                          example: test
-                          required: false
-                        id:
-                          type: string
-                          example: test
-                          required: false
-                        inspector:
-                          type: string
-                          example: test
-                          required: false
-                        maximumExpectedMeasure:
-                          type: number
-                          example: 1
-                          required: false
-                        measureDate:
-                          type: string
-                          example: '2024-04-04T00:26:57.115+02:00'
-                          required: false
-                        measureTypeCode:
-                          type: string
-                          example: test
-                          required: false
-                        measureTypeDescription:
-                          type: string
-                          example: test
-                          required: false
-                        measureUnitDescription:
-                          type: string
-                          example: test
-                          required: false
-                        measureValue:
-                          type: number
-                          example: 1
-                          required: false
-                        minimumExpectedMeasure:
-                          type: number
-                          example: 1
-                          required: false
-                        observation:
-                          type: string
-                          example: test
-                          required: false
-                        recordType:
-                          type: string
-                          example: test
-                          required: false
-                        sidCodVoceRaggr:
-                          type: string
-                          example: test
-                          required: false
-                        sourceSystem:
-                          type: string
-                          example: test
-                          required: false
-                  measurePoints:
-                    type: array
-                    required: false
-                    items:
-                      type: object
-                      properties:
-                        description:
-                          type: string
-                          example: test
-                          required: false
-                        externalId:
-                          type: string
-                          example: test
-                          required: false
-                        externalSysId:
-                          type: string
-                          example: test
-                          required: false
-                        id:
-                          type: string
-                          example: test
-                          required: false
-                        location:
-                          type: object
-                          required: false
-                          properties:
-                            externalId:
-                              type: string
-                              example: test
-                              required: false
-                        lowerAction:
-                          type: number
-                          example: 1
-                          required: false
-                        lowerWarning:
-                          type: number
-                          example: 1
-                          required: false
-                        measurements:
-                          type: array
-                          required: false
-                          items:
-                            type: object
-                            properties:
-                              accessoryMeasureCode:
-                                type: number
-                                example: 1
-                                required: false
-                              description:
-                                type: string
-                                example: test
-                                required: false
-                              externalId:
-                                type: string
-                                example: test
-                                required: false
-                              externalSysId:
-                                type: string
-                                example: test
-                                required: false
-                              id:
-                                type: string
-                                example: test
-                                required: false
-                              inspector:
-                                type: string
-                                example: test
-                                required: false
-                              maximumExpectedMeasure:
-                                type: number
-                                example: 1
-                                required: false
-                              measureDate:
-                                type: string
-                                example: '2024-04-04T00:26:57.115+02:00'
-                                required: false
-                              measureTypeCode:
-                                type: string
-                                example: test
-                                required: false
-                              measureTypeDescription:
-                                type: string
-                                example: test
-                                required: false
-                              measureUnitDescription:
-                                type: string
-                                example: test
-                                required: false
-                              measureValue:
-                                type: number
-                                example: 1
-                                required: false
-                              minimumExpectedMeasure:
-                                type: number
-                                example: 1
-                                required: false
-                              observation:
-                                type: string
-                                example: test
-                                required: false
-                              recordType:
-                                type: string
-                                example: test
-                                required: false
-                              sidCodVoceRaggr:
-                                type: string
-                                example: test
-                                required: false
-                              sourceSystem:
-                                type: string
-                                example: test
-                                required: false
-                        recordType:
-                          type: string
-                          example: test
-                          required: false
-                        sourceSystem:
-                          type: string
-                          example: test
-                          required: false
-                        upperAction:
-                          type: number
-                          example: 1
-                          required: false
-                        upperWarning:
-                          type: number
-                          example: 1
-                          required: false
-                  privateKey1:
-                    type: string
-                    example: test
-                    required: false
-                  privateKey2:
-                    type: string
-                    example: test
-                    required: false
-                  publicKey:
-                    type: string
-                    example: test
-                    required: false
-                  recordType:
-                    type: string
-                    example: test
-                    required: false
-                  serialNumber:
-                    type: string
-                    example: test
-                    required: false
-                  sourceSystem:
-                    type: string
-                    example: test
-                    required: false
-                  statusCode:
-                    type: string
-                    example: test
-                    required: false
-                  statusDescription:
-                    type: string
-                    example: test
-                    required: false
-                  typeCode:
-                    type: string
-                    example: test
-                    required: false
-                  typeDescription:
-                    type: string
-                    example: test
-                    required: false
-                  typeRequestedCode:
-                    type: string
-                    example: test
-                    required: false
-                  typeRequestedDescription:
-                    type: string
-                    example: test
-                    required: false
-            classification:
-              type: object
-              required: false
-              properties:
-                attributes:
-                  type: array
-                  required: false
-                  items:
-                    type: object
-                    properties:
-                      alphanumericValue:
-                        type: string
-                        example: test
-                        required: false
-                      attribute:
-                        type: object
-                        required: false
-                        properties:
-                          externalId:
-                            type: string
-                            example: test
-                            required: false
-                          recordType:
-                            type: string
-                            example: test
-                            required: false
-                      dateValue:
-                        type: string
-                        example: '2024-04-04T00:26:57.115+02:00'
-                        required: false
-                      externalSysId:
-                        type: string
-                        example: test
-                        required: false
-                      numericValue:
-                        type: number
-                        example: 1
-                        required: false
-                      section:
-                        type: string
-                        example: test
-                        required: false
-                      tableValue:
-                        type: string
-                        example: test
-                        required: false
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-            description:
-              type: string
-              example: test
-              required: false
-            detachmentCode:
-              type: string
-              example: test
-              required: false
-            detachmentDescription:
-              type: string
-              example: test
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            externalSysId2:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            isPrimary:
-              type: boolean
-              example: true
-              required: false
-            location:
-              type: object
-              required: false
-              properties:
-                externalSysId:
-                  type: string
-                  example: test
-                  required: false
-            note:
-              type: string
-              example: test
-              required: false
-            podPdr:
-              type: string
-              example: test
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            sameAsWorkOrder:
-              type: boolean
-              example: true
-              required: false
-            sourceSystem:
-              type: string
-              example: test
-              required: false
-      assignedResource:
-        type: object
-        required: false
-        properties:
-          description:
-            type: string
-            example: test
-            required: false
-          externalId:
-            type: string
-            example: test
-            required: false
-          externalSysId:
-            type: string
-            example: test
-            required: false
-          id:
-            type: string
-            example: test
-            required: false
-          numberOfResourceNeeded:
-            type: integer
-            example: 1
-            required: false
-          recordType:
-            type: string
-            example: test
-            required: false
-          serviceAppointment:
-            type: object
-            required: false
-            properties:
-              actualEndTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              actualStartTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              arrivalWindowEndTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              arrivalWindowStartTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              cancelReasonCode:
-                type: integer
-                example: 1
-                required: false
-              city:
-                type: string
-                example: test
-                required: false
-              country:
-                type: string
-                example: test
-                required: false
-              department:
-                type: string
-                example: test
-                required: false
-              description:
-                type: string
-                example: test
-                required: false
-              dueDate:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              duration:
-                type: number
-                example: 1
-                required: false
-              durationType:
-                type: string
-                example: test
-                required: false
-              earliestStartTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              elapsedTimeFromReportDate:
-                type: number
-                example: 1
-                required: false
-              extDuration:
-                type: number
-                example: 1
-                required: false
-              externalId:
-                type: string
-                example: test
-                required: false
-              externalSysId:
-                type: string
-                example: test
-                required: false
-              forcedScheduling:
-                type: boolean
-                example: true
-                required: false
-              id:
-                type: string
-                example: test
-                required: false
-              latitude:
-                type: number
-                example: 123
-                required: false
-              longitude:
-                type: number
-                example: 123
-                required: false
-              pdf:
-                type: string
-                example: test
-                required: false
-              pod:
-                type: string
-                example: test
-                required: false
-              postalCode:
-                type: string
-                example: test
-                required: false
-              recordType:
-                type: string
-                example: test
-                required: false
-              reportDate:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              schedEndTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              schedStartTime:
-                type: string
-                example: '2024-04-04T00:26:57.115+02:00'
-                required: false
-              serviceNote:
-                type: string
-                example: test
-                required: false
-              sourceSystem:
-                type: string
-                example: test
-                required: false
-              sourceSystemSuspensionReason:
-                type: string
-                example: test
-                required: false
-              state:
-                type: string
-                example: test
-                required: false
-              status:
-                type: string
-                example: test
-                required: false
-              street:
-                type: string
-                example: test
-                required: false
-              streetNumber:
-                type: string
-                example: test
-                required: false
-              subject:
-                type: string
-                example: test
-                required: false
-              timeSlot:
-                type: string
-                example: test
-                required: false
-              toponym:
-                type: string
-                example: test
-                required: false
-          serviceResources:
-            type: array
-            required: false
-            items:
-              type: object
-              properties:
-                department:
-                  type: string
-                  example: test
-                  required: false
-                description:
-                  type: string
-                  example: test
-                  required: false
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-                externalSysId:
-                  type: string
-                  example: test
-                  required: false
-                recordType:
-                  type: string
-                  example: test
-                  required: false
-                sourceSystem:
-                  type: string
-                  example: test
-                  required: false
-                sourceSystemExternalId:
-                  type: string
-                  example: test
-                  required: false
-      city:
-        type: string
-        example: test
-        required: false
-      cityCode:
-        type: string
-        example: test
-        required: false
-      classification:
-        type: object
-        required: false
-        properties:
-          attributes:
-            type: array
-            required: false
-            items:
-              type: object
-              properties:
-                activeWhen:
-                  type: string
-                  example: test
-                  required: false
-                alphanumericValue:
-                  type: string
-                  example: test
-                  required: false
-                attribute:
-                  type: object
-                  required: false
-                  properties:
-                    description:
-                      type: string
-                      example: test
-                      required: false
-                    externalId:
-                      type: string
-                      example: test
-                      required: false
-                    externalSysId:
-                      type: string
-                      example: test
-                      required: false
-                    id:
-                      type: string
-                      example: test
-                      required: false
-                    lookupName:
-                      type: string
-                      example: test
-                      required: false
-                    recordType:
-                      type: string
-                      example: test
-                      required: false
-                    section:
-                      type: string
-                      example: test
-                      required: false
-                    sourceSystem:
-                      type: string
-                      example: test
-                      required: false
-                    tableAttribute:
-                      type: string
-                      example: test
-                      required: false
-                attributeOrder:
-                  type: number
-                  example: 1
-                  required: false
-                changeBy:
-                  type: string
-                  example: test
-                  required: false
-                changeDate:
-                  type: string
-                  example: '2024-04-04T00:26:57.115+02:00'
-                  required: false
-                dateValue:
-                  type: string
-                  example: '2024-04-04T00:26:57.115+02:00'
-                  required: false
-                description:
-                  type: string
-                  example: test
-                  required: false
-                editable:
-                  type: boolean
-                  example: true
-                  required: false
-                errorType:
-                  type: string
-                  example: test
-                  required: false
-                expressionOrScript:
-                  type: string
-                  example: test
-                  required: false
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-                externalSysId:
-                  type: string
-                  example: test
-                  required: false
-                id:
-                  type: string
-                  example: test
-                  required: false
-                invalidErrorMessage:
-                  type: string
-                  example: test
-                  required: false
-                labelReportUtente:
-                  type: string
-                  example: test
-                  required: false
-                lookupName:
-                  type: string
-                  example: test
-                  required: false
-                mandatory:
-                  type: boolean
-                  example: true
-                  required: false
-                mandatoryWhen:
-                  type: string
-                  example: test
-                  required: false
-                maxLength:
-                  type: number
-                  example: 1
-                  required: false
-                maxValue:
-                  type: number
-                  example: 1
-                  required: false
-                minValue:
-                  type: number
-                  example: 1
-                  required: false
-                numericValue:
-                  type: number
-                  example: 1
-                  required: false
-                recordType:
-                  type: string
-                  example: test
-                  required: false
-                reportUtenteOrder:
-                  type: number
-                  example: 1
-                  required: false
-                reportUtenteWhen:
-                  type: string
-                  example: test
-                  required: false
-                section:
-                  type: string
-                  example: test
-                  required: false
-                sectionOrder:
-                  type: number
-                  example: 1
-                  required: false
-                sidCodFlgObbligConf:
-                  type: string
-                  example: test
-                  required: false
-                sidCodFlgTipoDato:
-                  type: string
-                  example: test
-                  required: false
-                sidNumDecimaliDato:
-                  type: string
-                  example: test
-                  required: false
-                sidVersione:
-                  type: string
-                  example: test
-                  required: false
-                sourceSystem:
-                  type: string
-                  example: test
-                  required: false
-                tableValue:
-                  type: string
-                  example: test
-                  required: false
-                validationScript:
-                  type: string
-                  example: test
-                  required: false
-                viewOnReportUtente:
-                  type: boolean
-                  example: true
-                  required: false
-                visible:
-                  type: boolean
-                  example: true
-                  required: false
-                visibleWhen:
-                  type: string
-                  example: test
-                  required: false
-          classificationId:
-            type: string
-            example: test
-            required: false
-          description:
-            type: string
-            example: test
-            required: false
-          externalId:
-            type: string
-            example: test
-            required: false
-          externalSysId:
-            type: string
-            example: test
-            required: false
-          hasChildren:
-            type: boolean
-            example: true
-            required: false
-          hierarchyPath:
-            type: string
-            example: test
-            required: false
-          id:
-            type: string
-            example: test
-            required: false
-          recordType:
-            type: string
-            example: test
-            required: false
-          sourceSystem:
-            type: string
-            example: test
-            required: false
-      country:
-        type: string
-        example: test
-        required: false
-      description:
-        type: string
-        example: test
-        required: false
-      duration:
-        type: number
-        example: 1
-        required: false
-      durationType:
-        type: string
-        example: test
-        required: false
-      endDate:
-        type: string
-        example: '2024-04-04T00:26:57.115+02:00'
-        required: false
-      externalId:
-        type: string
-        example: test
-        required: false
-      externalIdSAP:
-        type: string
-        example: test
-        required: false
-      externalIdSID:
-        type: string
-        example: test
-        required: false
-      externalParentIdSID:
-        type: string
-        example: test
-        required: false
-      externalSysId:
-        type: string
-        example: test
-        required: false
-      failureCodes:
-        type: array
-        required: false
-        items:
-          type: string
-      failureReports:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            description:
-              type: string
-              example: test
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            fcDescription:
-              type: string
-              example: test
-              required: false
-            fcExternalId:
-              type: string
-              example: test
-              required: false
-            fcExternalSysId:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            sourceSystem:
-              type: string
-              example: test
-              required: false
-      id:
-        type: string
-        example: test
-        required: false
-      isAccident:
-        type: boolean
-        example: true
-        required: false
-      latitude:
-        type: number
-        example: 123
-        required: false
-      location:
-        type: object
-        required: false
-        properties:
-          description:
-            type: string
-            example: test
-            required: false
-          externalId:
-            type: string
-            example: test
-            required: false
-          externalSysId:
-            type: string
-            example: test
-            required: false
-          id:
-            type: string
-            example: test
-            required: false
-          isInventoryLocation:
-            type: boolean
-            example: true
-            required: false
-          isMobile:
-            type: boolean
-            example: true
-            required: false
-          latitude:
-            type: number
-            example: 123
-            required: false
-          legacyLocationNumber:
-            type: string
-            example: test
-            required: false
-          locationType:
-            type: string
-            example: test
-            required: false
-          longitude:
-            type: number
-            example: 123
-            required: false
-          name:
-            type: string
-            example: test
-            required: false
-          recordType:
-            type: string
-            example: test
-            required: false
-          sameAsWorkOrder:
-            type: boolean
-            example: true
-            required: false
-          sourceSystem:
-            type: string
-            example: test
-            required: false
-          status:
-            type: string
-            example: test
-            required: false
-          statusDate:
-            type: string
-            example: '2024-04-04T00:26:57.115+02:00'
-            required: false
-      longitude:
-        type: number
-        example: 123
-        required: false
-      networksInstalled:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            description:
-              type: string
-              example: test
-              required: false
-            destination:
-              type: string
-              example: test
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            installDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            installedMaterial:
-              type: string
-              example: test
-              required: false
-            measureUnit:
-              type: string
-              example: test
-              required: false
-            quantity:
-              type: number
-              example: 1
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            sourceSystem:
-              type: string
-              example: test
-              required: false
-            usage:
-              type: string
-              example: test
-              required: false
-            userType:
-              type: string
-              example: test
-              required: false
-      note:
-        type: string
-        example: test
-        required: false
-      operations:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            agreed:
-              type: boolean
-              example: true
-              required: false
-            allLinesOfSameTransformer:
-              type: boolean
-              example: true
-              required: false
-            description:
-              type: string
-              example: test
-              required: false
-            endDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            entireLineInvolved:
-              type: boolean
-              example: true
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            isLineTrunk:
-              type: boolean
-              example: true
-              required: false
-            lineName:
-              type: string
-              example: test
-              required: false
-            location:
-              type: object
-              required: false
-              properties:
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-            numberOfLines:
-              type: number
-              example: 1
-              required: false
-            numberOfPhases:
-              type: number
-              example: 1
-              required: false
-            numberOfUsers:
-              type: number
-              example: 1
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            sourceSystem:
-              type: string
-              example: test
-              required: false
-            startDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            workPlanId:
-              type: string
-              example: test
-              required: false
-      orgId:
-        type: string
-        example: test
-        required: false
-      outages:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            ciNumber:
-              type: number
-              example: 1
-              required: false
-            city:
-              type: string
-              example: test
-              required: false
-            description:
-              type: string
-              example: test
-              required: false
-            endDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            h2oOutages:
-              type: array
-              required: false
-              items:
-                type: object
-                properties:
-                  alternativeSolution:
-                    type: boolean
-                    example: true
-                    required: false
-                  alternativeSolutionType:
-                    type: string
-                    example: test
-                    required: false
-                  category:
-                    type: string
-                    example: test
-                    required: false
-                  ciNumber:
-                    type: number
-                    example: 1
-                    required: false
-                  city:
-                    type: string
-                    example: test
-                    required: false
-                  description:
-                    type: string
-                    example: test
-                    required: false
-                  endDate:
-                    type: string
-                    example: '2024-04-04T00:26:57.115+02:00'
-                    required: false
-                  externalId:
-                    type: string
-                    example: test
-                    required: false
-                  externalSysId:
-                    type: string
-                    example: test
-                    required: false
-                  noticeDate:
-                    type: string
-                    example: '2024-04-04T00:26:57.115+02:00'
-                    required: false
-                  noticeEndDate:
-                    type: string
-                    example: '2024-04-04T00:26:57.115+02:00'
-                    required: false
-                  plannedEndDate:
-                    type: string
-                    example: '2024-04-04T00:26:57.115+02:00'
-                    required: false
-                  plannedStartDate:
-                    type: string
-                    example: '2024-04-04T00:26:57.115+02:00'
-                    required: false
-                  reason:
-                    type: string
-                    example: test
-                    required: false
-                  recordType:
-                    type: string
-                    example: test
-                    required: false
-                  sourceSystem:
-                    type: string
-                    example: test
-                    required: false
-                  startDate:
-                    type: string
-                    example: '2024-04-04T00:26:57.115+02:00'
-                    required: false
-                  streets:
-                    type: array
-                    required: false
-                    items:
-                      type: object
-                      properties:
-                        city:
-                          type: string
-                          example: test
-                          required: false
-                        description:
-                          type: string
-                          example: test
-                          required: false
-                        externalId:
-                          type: string
-                          example: test
-                          required: false
-                        externalSysId:
-                          type: string
-                          example: test
-                          required: false
-                        id:
-                          type: string
-                          example: test
-                          required: false
-                        recordType:
-                          type: string
-                          example: test
-                          required: false
-                        sourceSystem:
-                          type: string
-                          example: test
-                          required: false
-                        street:
-                          type: string
-                          example: test
-                          required: false
-                        streetNumberEvenEnd:
-                          type: string
-                          example: test
-                          required: false
-                        streetNumberEvenStart:
-                          type: string
-                          example: test
-                          required: false
-                        streetNumberOddEnd:
-                          type: string
-                          example: test
-                          required: false
-                        streetNumberOddStart:
-                          type: string
-                          example: test
-                          required: false
-                  zone:
-                    type: string
-                    example: test
-                    required: false
-            id:
-              type: string
-              example: test
-              required: false
-            noticeDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            noticeEndDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            plannedEndDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            plannedStartDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            reason:
-              type: string
-              example: test
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            startDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            art20:
-              type: string
-              example: test
-              required: false
-            chiave:
-              type: string
-              example: test
-              required: false
-            mp:
-              type: boolean
-              example: true
-              required: false
-            mr:
-              type: number
-              example: 1
-              required: false
-      parentFlisr:
-        type: string
-        example: test
-        required: false
-      parentWorkOrder:
-        type: object
-        required: false
-        properties:
-          externalId:
-            type: string
-            example: test
-            required: false
-      postalCode:
-        type: string
-        example: test
-        required: false
-      priority:
-        type: string
-        example: test
-        required: false
-      productsConsumed:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            description:
-              type: string
-              example: test
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            isBatch:
-              type: boolean
-              example: true
-              required: false
-            lotCode:
-              type: string
-              example: test
-              required: false
-            product2:
-              type: object
-              required: false
-              properties:
-                description:
-                  type: string
-                  example: test
-                  required: false
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-                externalSysId:
-                  type: string
-                  example: test
-                  required: false
-                id:
-                  type: string
-                  example: test
-                  required: false
-                quantityUnitOfMeasure:
-                  type: string
-                  example: test
-                  required: false
-                recordType:
-                  type: string
-                  example: test
-                  required: false
-                sourceSystem:
-                  type: string
-                  example: test
-                  required: false
-                unitPrice:
-                  type: number
-                  example: 1
-                  required: false
-            quantityConsumed:
-              type: number
-              example: 1
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            sourceSystem:
-              type: string
-              example: test
-              required: false
-      productsRequired:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            commitmentDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            description:
-              type: string
-              example: test
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalIdSap:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            isBatch:
-              type: string
-              example: test
-              required: false
-            isCommitted:
-              type: string
-              example: test
-              required: false
-            lotCode:
-              type: string
-              example: test
-              required: false
-            product2:
-              type: object
-              required: false
-              properties:
-                description:
-                  type: string
-                  example: test
-                  required: false
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-                externalSysId:
-                  type: string
-                  example: test
-                  required: false
-                id:
-                  type: string
-                  example: test
-                  required: false
-                quantityUnitOfMeasure:
-                  type: string
-                  example: test
-                  required: false
-                recordType:
-                  type: string
-                  example: test
-                  required: false
-                sourceSystem:
-                  type: string
-                  example: test
-                  required: false
-                unitPrice:
-                  type: number
-                  example: 1
-                  required: false
-            quantityRequired:
-              type: number
-              example: 1
-              required: false
-            quantityUnitOfMeasure:
-              type: string
-              example: test
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            sourceSystem:
-              type: string
-              example: test
-              required: false
-      reasonCode:
-        type: integer
-        example: 1
-        required: false
-      recordType:
-        type: string
-        example: test
-        required: false
-      refund:
-        type: string
-        example: test
-        required: false
-      reportDate:
-        type: string
-        example: '2024-04-04T00:26:57.115+02:00'
-        required: false
-      sequenceNumber:
-        type: string
-        example: test
-        required: false
-      serviceTypeCode:
-        type: string
-        example: test
-        required: false
-      serviceTypeDescription:
-        type: string
-        example: test
-        required: false
-      siteId:
-        type: string
-        example: test
-        required: false
-      sourceSystem:
-        type: string
-        example: test
-        required: false
-      sourceSystemLastUpdateDate:
-        type: string
-        example: '2024-04-04T00:26:57.115+02:00'
-        required: false
-      startDate:
-        type: string
-        example: '2024-04-04T00:26:57.115+02:00'
-        required: false
-      state:
-        type: string
-        example: test
-        required: false
-      status:
-        type: string
-        example: test
-        required: false
-      street:
-        type: string
-        example: test
-        required: false
-      streetCode:
-        type: string
-        example: test
-        required: false
-      streetNumber:
-        type: string
-        example: test
-        required: false
-      subject:
-        type: string
-        example: test
-        required: false
-      supervisor:
-        type: string
-        example: test
-        required: false
-      suspendAppointmentDate:
-        type: string
-        example: '2024-04-04T00:26:57.115+02:00'
-        required: false
-      toEmergencyRoom:
-        type: boolean
-        example: true
-        required: false
-      toponym:
-        type: string
-        example: test
-        required: false
-      workOrderLineItems:
-        type: array
-        required: false
-        items:
-          type: object
-          properties:
-            classification:
-              type: object
-              required: false
-              properties:
-                attributes:
-                  type: array
-                  required: false
-                  items:
-                    type: object
-                    properties:
-                      alphanumericValue:
-                        type: string
-                        example: test
-                        required: false
-                      attribute:
-                        type: object
-                        required: false
-                        properties:
-                          externalId:
-                            type: string
-                            example: test
-                            required: false
-                          recordType:
-                            type: string
-                            example: test
-                            required: false
-                      changeBy:
-                        type: string
-                        example: test
-                        required: false
-                      changeDate:
-                        type: string
-                        example: '2024-04-04T00:26:57.115+02:00'
-                        required: false
-                      dateValue:
-                        type: string
-                        example: '2024-04-04T00:26:57.115+02:00'
-                        required: false
-                      externalId:
-                        type: string
-                        example: test
-                        required: false
-                      externalSysId:
-                        type: string
-                        example: test
-                        required: false
-                      id:
-                        type: string
-                        example: test
-                        required: false
-                      numericValue:
-                        type: number
-                        example: 1
-                        required: false
-                      section:
-                        type: string
-                        example: test
-                        required: false
-                      tableValue:
-                        type: string
-                        example: test
-                        required: false
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-            createBy:
-              type: string
-              example: test
-              required: false
-            description:
-              type: string
-              example: test
-              required: false
-            endDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            externalId:
-              type: string
-              example: test
-              required: false
-            externalSysId:
-              type: string
-              example: test
-              required: false
-            id:
-              type: string
-              example: test
-              required: false
-            logType:
-              type: string
-              example: test
-              required: false
-            recordType:
-              type: string
-              example: test
-              required: false
-            startDate:
-              type: string
-              example: '2024-04-04T00:26:57.115+02:00'
-              required: false
-            subject:
-              type: string
-              example: test
-              required: false
-            workType:
-              type: object
-              required: false
-              properties:
-                externalId:
-                  type: string
-                  example: test
-                  required: false
-      workType:
-        type: object
-        required: false
-        properties:
-          description:
-            type: string
-            example: test
-            required: false
-          externalId:
-            type: string
-            example: test
-            required: false
-          externalSysId:
-            type: string
-            example: test
-            required: false
-          id:
-            type: string
-            example: test
-            required: false
-          name:
-            type: string
-            example: test
-            required: false
-          recordType:
-            type: string
-            example: test
-            required: false
-          sourceSystem:
-            type: string
-            example: test
-            required: false
+{
+  "headers": {
+    
+  },
+  "attachments": {
+    
+  },
+  "body": {
+    "ConsuntivazioneOdlRequest": {
+      "assignedResource": {
+        "description": null,
+        "externalId": null,
+        "externalSysId": null,
+        "id": null,
+        "recordType": null,
+        "serviceAppointment": {
+          "actualEndTime": "2024-04-10T09:08:02Z",
+          "actualStartTime": "2024-04-10T09:08:02Z",
+          "arrivalWindowEndTime": null,
+          "arrivalWindowStartTime": null,
+          "cancelReasonCode": null,
+          "city": "MILANO",
+          "contact": {
+            "description": null,
+            "externalId": null,
+            "externalSysId": null,
+            "firstName": null,
+            "id": null,
+            "lastName": null,
+            "mobilePhone": null,
+            "phone": null,
+            "recordType": null,
+            "sourceSystem": null
+          },
+          "country": "IT",
+          "department": "F60400",
+          "description": null,
+          "dueDate": null,
+          "duration": "60",
+          "durationType": "Minutes",
+          "earliestStartTime": "2024-04-10T11:40:00Z",
+          "externalId": "3658655",
+          "externalSysId": null,
+          "id": "08pTr000002XgljIAC",
+          "isCustomerInPlace": "false",
+          "latitude": null,
+          "longitude": null,
+          "postalCode": null,
+          "recordType": null,
+          "schedEndTime": "2024-04-10T13:40:00Z",
+          "schedStartTime": "2024-04-10T12:40:00Z",
+          "serviceNote": null,
+          "sourceSystem": "MAX",
+          "state": null,
+          "status": "Rifiutato",
+          "street": "530 - VERCELLI-BELFIORE",
+          "streetNumber": null,
+          "subject": "Verifica periodica e misure impianto",
+          "timeSlot": null,
+          "toponym": null
+        },
+        "serviceResources": {
+          "department": "F60400",
+          "description": null,
+          "externalId": "62671",
+          "externalSysId": null,
+          "id": null,
+          "recordType": "T",
+          "sourceSystem": null
+        },
+        "sourceSystem": null
+      },
+      "city": "MILANO",
+      "cityCode": "3015146",
+      "classification": {
+        "attributes": {
+          "alphanumericValue": null,
+          "attribute": {
+            "attribute": null,
+            "description": null,
+            "domain": null,
+            "externalId": "DESCSINI",
+            "externalSysId": null,
+            "id": null,
+            "lookupName": null,
+            "measureUnit": null,
+            "recordType": "Alphanumeric",
+            "section": null,
+            "sourceSystem": null,
+            "tableAttribute": null
+          },
+          "attributeColnum": "1",
+          "attributeGrow": "4",
+          "attributeOrder": null,
+          "attributeRownum": null,
+          "changeBy": "MAXADMIN",
+          "changeDate": "2024-01-01T00:47:42Z",
+          "dateValue": null,
+          "description": "Descrizione del sinistro causa e valutazione di massima del danno",
+          "domain": null,
+          "editable": "true",
+          "externalId": "203501",
+          "externalSysId": "185635522",
+          "id": "a1bTr000003NGSDIA4",
+          "lookupName": null,
+          "mandatory": "false",
+          "mandatoryWhen": null,
+          "maxLength": null,
+          "maxValue": null,
+          "minValue": null,
+          "numericValue": null,
+          "recordType": "Alphanumeric",
+          "reportUtenteOrder": null,
+          "reportUtenteWhen": null,
+          "section": "SINISTRI",
+          "sectionOrder": null,
+          "sidCodFlgObbligConf": null,
+          "sidCodFlgTipoDato": null,
+          "sidNumDecimaliDato": null,
+          "sidVersione": null,
+          "sourceSystem": "MAX",
+          "tableValue": null,
+          "viewOnReportUtente": "false",
+          "visible": "true",
+          "visibleOnTab": "TAB_SINISTRI",
+          "visibleWhen": null
+        },
+        "attributes": {
+          "alphanumericValue": null,
+          "attribute": {
+            "attribute": null,
+            "description": null,
+            "domain": null,
+            "externalId": "INDDNGTE",
+            "externalSysId": null,
+            "id": null,
+            "lookupName": null,
+            "measureUnit": null,
+            "recordType": "Alphanumeric",
+            "section": null,
+            "sourceSystem": null,
+            "tableAttribute": null
+          },
+          "attributeColnum": "1",
+          "attributeGrow": "4",
+          "attributeOrder": null,
+          "attributeRownum": null,
+          "changeBy": "MAXADMIN",
+          "changeDate": "2024-01-01T00:47:42Z",
+          "dateValue": null,
+          "description": "Indirizzo - danneggiante",
+          "domain": null,
+          "editable": "true",
+          "externalId": "203502",
+          "externalSysId": "185635523",
+          "id": "a1bTr000003NGSEIA4",
+          "lookupName": null,
+          "mandatory": "false",
+          "mandatoryWhen": null,
+          "maxLength": null,
+          "maxValue": null,
+          "minValue": null,
+          "numericValue": null,
+          "recordType": "Alphanumeric",
+          "reportUtenteOrder": null,
+          "reportUtenteWhen": null,
+          "section": "SINISTRI",
+          "sectionOrder": null,
+          "sidCodFlgObbligConf": null,
+          "sidCodFlgTipoDato": null,
+          "sidNumDecimaliDato": null,
+          "sidVersione": null,
+          "sourceSystem": "MAX",
+          "tableValue": null,
+          "viewOnReportUtente": "false",
+          "visible": "true",
+          "visibleOnTab": "TAB_SINISTRI",
+          "visibleWhen": null
+        },
+        "attributes": {
+          "alphanumericValue": null,
+          "attribute": {
+            "attribute": null,
+            "description": null,
+            "domain": null,
+            "externalId": "NOMEDNGTE",
+            "externalSysId": null,
+            "id": null,
+            "lookupName": null,
+            "measureUnit": null,
+            "recordType": "Alphanumeric",
+            "section": null,
+            "sourceSystem": null,
+            "tableAttribute": null
+          },
+          "attributeColnum": "1",
+          "attributeGrow": "4",
+          "attributeOrder": null,
+          "attributeRownum": null,
+          "changeBy": "MAXADMIN",
+          "changeDate": "2024-01-01T00:47:42Z",
+          "dateValue": null,
+          "description": "Nome/ragione sociale del danneggiante",
+          "domain": null,
+          "editable": "true",
+          "externalId": "203506",
+          "externalSysId": "185635527",
+          "id": "a1bTr000003NGSJIA4",
+          "lookupName": null,
+          "mandatory": "false",
+          "mandatoryWhen": null,
+          "maxLength": null,
+          "maxValue": null,
+          "minValue": null,
+          "numericValue": null,
+          "recordType": "Alphanumeric",
+          "reportUtenteOrder": null,
+          "reportUtenteWhen": null,
+          "section": "SINISTRI",
+          "sectionOrder": null,
+          "sidCodFlgObbligConf": null,
+          "sidCodFlgTipoDato": null,
+          "sidNumDecimaliDato": null,
+          "sidVersione": null,
+          "sourceSystem": "MAX",
+          "tableValue": null,
+          "viewOnReportUtente": "false",
+          "visible": "true",
+          "visibleOnTab": "TAB_SINISTRI",
+          "visibleWhen": null
+        },
+        "attributes": {
+          "alphanumericValue": null,
+          "attribute": {
+            "attribute": null,
+            "description": null,
+            "domain": null,
+            "externalId": "PCOMDNGTE",
+            "externalSysId": null,
+            "id": null,
+            "lookupName": null,
+            "measureUnit": null,
+            "recordType": "Alphanumeric",
+            "section": null,
+            "sourceSystem": null,
+            "tableAttribute": null
+          },
+          "attributeColnum": "1",
+          "attributeGrow": "4",
+          "attributeOrder": null,
+          "attributeRownum": null,
+          "changeBy": "MAXADMIN",
+          "changeDate": "2024-01-01T00:47:42Z",
+          "dateValue": null,
+          "description": "Comune¿¿-¿¿danneggiante",
+          "domain": null,
+          "editable": "true",
+          "externalId": "203509",
+          "externalSysId": "185635530",
+          "id": "a1bTr000003NGSMIA4",
+          "lookupName": null,
+          "mandatory": "false",
+          "mandatoryWhen": null,
+          "maxLength": null,
+          "maxValue": null,
+          "minValue": null,
+          "numericValue": null,
+          "recordType": "Alphanumeric",
+          "reportUtenteOrder": null,
+          "reportUtenteWhen": null,
+          "section": "SINISTRI",
+          "sectionOrder": null,
+          "sidCodFlgObbligConf": null,
+          "sidCodFlgTipoDato": null,
+          "sidNumDecimaliDato": null,
+          "sidVersione": null,
+          "sourceSystem": "MAX",
+          "tableValue": null,
+          "viewOnReportUtente": "false",
+          "visible": "true",
+          "visibleOnTab": "TAB_SINISTRI",
+          "visibleWhen": null
+        },
+        "attributes": {
+          "alphanumericValue": null,
+          "attribute": {
+            "attribute": null,
+            "description": null,
+            "domain": null,
+            "externalId": "PTELDNGTE",
+            "externalSysId": null,
+            "id": null,
+            "lookupName": null,
+            "measureUnit": null,
+            "recordType": "Alphanumeric",
+            "section": null,
+            "sourceSystem": null,
+            "tableAttribute": null
+          },
+          "attributeColnum": "1",
+          "attributeGrow": "4",
+          "attributeOrder": null,
+          "attributeRownum": null,
+          "changeBy": "MAXADMIN",
+          "changeDate": "2024-01-01T00:47:42Z",
+          "dateValue": null,
+          "description": "Recapito¿¿telefonico¿¿-¿¿danneggiante",
+          "domain": null,
+          "editable": "true",
+          "externalId": "203511",
+          "externalSysId": "185635532",
+          "id": "a1bTr000003NGSOIA4",
+          "lookupName": null,
+          "mandatory": "false",
+          "mandatoryWhen": null,
+          "maxLength": null,
+          "maxValue": null,
+          "minValue": null,
+          "numericValue": null,
+          "recordType": "Alphanumeric",
+          "reportUtenteOrder": null,
+          "reportUtenteWhen": null,
+          "section": "SINISTRI",
+          "sectionOrder": null,
+          "sidCodFlgObbligConf": null,
+          "sidCodFlgTipoDato": null,
+          "sidNumDecimaliDato": null,
+          "sidVersione": null,
+          "sourceSystem": "MAX",
+          "tableValue": null,
+          "viewOnReportUtente": "false",
+          "visible": "true",
+          "visibleOnTab": "TAB_SINISTRI",
+          "visibleWhen": null
+        },
+        "attributes": {
+          "alphanumericValue": null,
+          "attribute": {
+            "attribute": null,
+            "description": null,
+            "domain": null,
+            "externalId": "WO-850",
+            "externalSysId": null,
+            "id": null,
+            "lookupName": null,
+            "measureUnit": null,
+            "recordType": "Alphanumeric",
+            "section": null,
+            "sourceSystem": null,
+            "tableAttribute": null
+          },
+          "attributeColnum": "1",
+          "attributeGrow": "4",
+          "attributeOrder": null,
+          "attributeRownum": null,
+          "changeBy": "MAXADMIN",
+          "changeDate": "2024-01-01T00:47:43Z",
+          "dateValue": null,
+          "description": "Danneggiamento da terzi (S/N)?",
+          "domain": null,
+          "editable": "false",
+          "externalId": "294562",
+          "externalSysId": "185635556",
+          "id": "a1bTr000003NGSyIAO",
+          "lookupName": null,
+          "mandatory": "false",
+          "mandatoryWhen": null,
+          "maxLength": null,
+          "maxValue": null,
+          "minValue": null,
+          "numericValue": null,
+          "recordType": "Alphanumeric",
+          "reportUtenteOrder": null,
+          "reportUtenteWhen": null,
+          "section": null,
+          "sectionOrder": null,
+          "sidCodFlgObbligConf": null,
+          "sidCodFlgTipoDato": null,
+          "sidNumDecimaliDato": null,
+          "sidVersione": null,
+          "sourceSystem": "MAX",
+          "tableValue": null,
+          "viewOnReportUtente": "false",
+          "visible": "false",
+          "visibleOnTab": "TAB_CHIUSURA",
+          "visibleWhen": null
+        },
+        "classificationId": "MANUTENZIONE PROGRAMMATA-MISURE IMPIANTO",
+        "description": "MANUTENZIONE PROGRAMMATA-MISURE IMPIANTO",
+        "externalId": "6633",
+        "externalSysId": "7199",
+        "hasChildren": "false",
+        "hierarchyPath": "AIP \\ MANUT \\ SEM \\ MANUTENZIONE ORDINARIA \\ MANUTENZIONE PROGRAMMATA-MISURE IMPIANTO",
+        "id": "a1eTr000002BqADIA0",
+        "parent": null,
+        "recordType": null,
+        "sourceSystem": "MAX"
+      },
+      "contact": {
+        "description": null,
+        "externalId": null,
+        "externalSysId": null,
+        "firstName": null,
+        "id": null,
+        "lastName": null,
+        "mobilePhone": null,
+        "phone": null,
+        "recordType": null,
+        "sourceSystem": null
+      },
+      "country": "IT",
+      "description": null,
+      "duration": "60",
+      "durationType": "Minutes",
+      "endDate": null,
+      "error": null,
+      "externalId": "3658655",
+      "externalIdSAP": null,
+      "externalIdSID": null,
+      "externalParentIdSID": null,
+      "externalSysId": "3932209",
+      "failureCodes": null,
+      "id": "0WOTr000003dtXaOAI",
+      "isAccident": "false",
+      "latitude": null,
+      "location": {
+        "classification": {
+          "attributes": {
+            "alphanumericValue": "A2A",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000000053",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "Fornitore",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308173",
+            "id": "a1bTr000003NGT0IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "VERCELLI-BELFIORE",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000000910",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "6152",
+            "changeDate": "2019-09-23T06:22:11Z",
+            "dateValue": null,
+            "description": "LOCALITA'",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308177",
+            "id": "a1bTr000003NGT1IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": null,
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000001054",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T12:52:48Z",
+            "dateValue": null,
+            "description": "NOTE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308178",
+            "id": "a1bTr000003NGT2IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "IT012E00980555",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000001178",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "POD",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308185",
+            "id": "a1bTr000003NGT3IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": null,
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000001259",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Numeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T12:52:48Z",
+            "dateValue": null,
+            "description": "POTENZA IMPEGNATA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308187",
+            "id": "a1bTr000003NGT4IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Numeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "12",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002044",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "CORRENTE_ASSORBITA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308165",
+            "id": "a1bTr000003NGT5IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "22/11/2013",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002045",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "DATA -ASSORBIMENTO",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308166",
+            "id": "a1bTr000003NGT6IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "22/11/2013",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002046",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "DATA DIAGRAMMA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308167",
+            "id": "a1bTr000003NGT7IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": null,
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002049",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T12:52:48Z",
+            "dateValue": null,
+            "description": "DATA LETTURA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308168",
+            "id": "a1bTr000003NGT8IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "01/10/2014",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002050",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "DATA MODIFICA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308169",
+            "id": "a1bTr000003NGT9IAO",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "22/11/2013",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002052",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "DATA_ISOL",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308170",
+            "id": "a1bTr000003NGTAIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "22/11/2013",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002053",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "DATA_RT",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308171",
+            "id": "a1bTr000003NGTBIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "530E",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002055",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "DIAGRAMMA IN FUNZIONE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308172",
+            "id": "a1bTr000003NGTCIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "G",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002056",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "GESTIONE-VARIAZIONE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308174",
+            "id": "a1bTr000003NGTDIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "0,04",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002057",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "ISOLAMENTO",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308175",
+            "id": "a1bTr000003NGTEIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": null,
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002058",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T12:52:48Z",
+            "dateValue": null,
+            "description": "LETTURA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308176",
+            "id": "a1bTr000003NGTFIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "13190500",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002060",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "NUMERO CONTATORE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308179",
+            "id": "a1bTr000003NGTGIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "SI",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002061",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "NUOVO CODICE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308180",
+            "id": "a1bTr000003NGTHIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "16.45",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002062",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "ORA DIAGRAMMA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308181",
+            "id": "a1bTr000003NGTIIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "C",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002063",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "ORARIO DI FUNZIONAMENTO",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308182",
+            "id": "a1bTr000003NGTJIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "24.00",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002064",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "6152",
+            "changeDate": "2019-09-23T06:22:13Z",
+            "dateValue": null,
+            "description": "ORARIO LAMPEGGIO ALLE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308183",
+            "id": "a1bTr000003NGTKIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "0.00",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002065",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "6152",
+            "changeDate": "2019-09-23T06:22:16Z",
+            "dateValue": null,
+            "description": "ORARIO LAMPEGGIO DALLE",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308184",
+            "id": "a1bTr000003NGTLIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "2,64",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002066",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "POT_IMP",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308186",
+            "id": "a1bTr000003NGTMIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "2",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002067",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "RES_TERRA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308188",
+            "id": "a1bTr000003NGTNIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "7",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002071",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "ZONA VIGILANZA",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308189",
+            "id": "a1bTr000003NGTOIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "attributes": {
+            "alphanumericValue": "530",
+            "attribute": {
+              "attribute": null,
+              "description": null,
+              "domain": null,
+              "externalId": "A2A000002315",
+              "externalSysId": null,
+              "id": null,
+              "lookupName": null,
+              "measureUnit": null,
+              "recordType": "Alphanumeric",
+              "section": null,
+              "sourceSystem": null,
+              "tableAttribute": null
+            },
+            "attributeColnum": "1",
+            "attributeGrow": "4",
+            "attributeOrder": null,
+            "attributeRownum": null,
+            "changeBy": "NEM",
+            "changeDate": "2018-09-10T13:29:30Z",
+            "dateValue": null,
+            "description": "NUMERO IMPIANTO",
+            "domain": null,
+            "editable": "true",
+            "externalId": null,
+            "externalSysId": "8308190",
+            "id": "a1bTr000003NGTPIA4",
+            "lookupName": null,
+            "mandatory": "false",
+            "mandatoryWhen": null,
+            "maxLength": null,
+            "maxValue": null,
+            "minValue": null,
+            "numericValue": null,
+            "recordType": "Alphanumeric",
+            "reportUtenteOrder": null,
+            "reportUtenteWhen": null,
+            "section": null,
+            "sectionOrder": null,
+            "sidCodFlgObbligConf": null,
+            "sidCodFlgTipoDato": null,
+            "sidNumDecimaliDato": null,
+            "sidVersione": null,
+            "sourceSystem": "MAX",
+            "tableValue": null,
+            "viewOnReportUtente": "false",
+            "visible": "true",
+            "visibleOnTab": "TAB_CHIUSURA",
+            "visibleWhen": null
+          },
+          "classificationId": null,
+          "description": null,
+          "externalId": "IMP_SEMAFORO",
+          "externalSysId": null,
+          "hasChildren": "false",
+          "hierarchyPath": null,
+          "id": "a1eTr000002BqAEIA0",
+          "parent": null,
+          "recordType": null,
+          "sourceSystem": "MAX"
+        },
+        "description": "530 - VERCELLI-BELFIORE",
+        "externalId": "10000340",
+        "externalSysId": null,
+        "id": "131Tr000003RxGnIAK",
+        "isInventoryLocation": "false",
+        "isMobile": "false",
+        "latitude": null,
+        "legacyLocationNumber": "I-MI-S-0530",
+        "locationType": "OPERATING",
+        "longitude": null,
+        "name": "10000340",
+        "recordType": null,
+        "sameAsWorkOrder": "false",
+        "secondaryAddress": null,
+        "sourceSystem": null,
+        "status": "INESE",
+        "statusDate": null,
+        "visitorAddress": null
+      },
+      "longitude": null,
+      "note": null,
+      "orgId": "A2AORG",
+      "parentFlisr": null,
+      "parentWorkOrder": null,
+      "postalCode": null,
+      "previousContact": {
+        "description": null,
+        "externalId": null,
+        "externalSysId": null,
+        "firstName": null,
+        "id": null,
+        "lastName": null,
+        "mobilePhone": null,
+        "phone": null,
+        "recordType": null,
+        "sourceSystem": null
+      },
+      "priority": null,
+      "reasonCode": null,
+      "recordType": null,
+      "sequenceNumber": null,
+      "serviceTypeCode": "7",
+      "serviceTypeDescription": "SEM",
+      "sidAccMis": null,
+      "sidCabina": null,
+      "sidCodAzienda": null,
+      "sidCodCausaleSospensione": null,
+      "sidCodCliente": null,
+      "sidCodFlgVliAcb": null,
+      "sidCodOperatore": null,
+      "sidCodPraticaOdlSost": null,
+      "sidCodPratRifOdl": null,
+      "sidCodProfContrAttuale": null,
+      "sidCodProfContrRich": null,
+      "sidCodSquadra1": null,
+      "sidCodSquadra2": null,
+      "sidCodSquadra3": null,
+      "sidCodTipoApp": null,
+      "sidCodTipologia": null,
+      "sidCodTipoSchedul": null,
+      "sidDataCreazioneOdl": null,
+      "sidDesAzienda": null,
+      "sidDesCausaleSospensione": null,
+      "sidDesEsecutore2": null,
+      "sidDesEsecutore3": null,
+      "sidDesTipoFornitura": null,
+      "sidEmail": null,
+      "sidFax": null,
+      "sidFlagAppPersonalizzato": null,
+      "sidFlgCons": null,
+      "sidGiornoFatt": null,
+      "sidIndirizzoPrincipale": null,
+      "sidMeseFatt": null,
+      "sidPartenzaCabina": null,
+      "sidPeriodicitaFatt": null,
+      "sidPortataContrattuale": null,
+      "sidPressMisura": null,
+      "sidRagioneSociale": null,
+      "siteId": "A2A",
+      "sourceSystem": "MAX",
+      "sourceSystemLastUpdateDate": null,
+      "startDate": null,
+      "state": null,
+      "status": "Rifiutato",
+      "street": "530 - VERCELLI-BELFIORE",
+      "streetCode": null,
+      "streetNumber": null,
+      "subject": "Verifica periodica e misure impianto",
+      "supervisor": "6152",
+      "suspendAppointmentDate": null,
+      "toponym": null,
+      "workType": {
+        "description": "AIP \\ MANUT \\ SEM \\ MANUTENZIONE ORDINARIA \\ MANUTENZIONE PROGRAMMATA-MISURE IMPIANTO",
+        "externalId": "6633",
+        "externalSysId": "7199",
+        "id": "08q3V000000PEdQQAW",
+        "name": "MANUTENZIONE PROGRAMMATA-MISURE IMPIANTO",
+        "recordType": null,
+        "sourceSystem": null
+      }
+    }
+  }
+}
